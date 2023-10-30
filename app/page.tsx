@@ -20,7 +20,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <aside className="h-[50vh] flex max-w-screen">
+      <aside className="h-[50vh] flex max-w-screen justify-center items-center">
         <Stats />
       </aside>
       <Footer />
