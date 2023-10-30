@@ -15,7 +15,7 @@ export default function Hero() {
         A web application engineered to automate the creation of personalized
         letters and documents.
       </p>
-      <button className="mt-6 w-[20rem] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold">
+      <button className="mt-6 w-[20rem] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[6px] hover:border-b-[6px]">
         Get Started
       </button>
     </div>
