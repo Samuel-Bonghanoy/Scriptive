@@ -48,7 +48,9 @@ export default function Navbar() {
                 <a className="hover:bg-subyellow rounded-md px-2 py-2">Help</a>
               </li>
               <li>
-                <a>Contact Me</a>
+                <a className="hover:bg-subyellow rounded-md px-2 py-2">
+                  Contact Me
+                </a>
               </li>
               <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
                 <a>Login</a>
