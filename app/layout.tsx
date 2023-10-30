@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Raleway } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
-export const rubik = Montserrat({
+export const rubik = Raleway({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "500", "700", "900"],
