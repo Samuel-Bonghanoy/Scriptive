@@ -8,11 +8,11 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col lg:flex-row min-h-screen max-w-screen p-[2.5rem] bg-subyellow">
         <Hero />
-        <div>
+        <div className="lg:ml-[-10rem] mt-6 lg:mt-[-1rem]">
           <Image
             src="/hero.svg"
             alt="Next.js Logo"
-            width={650}
+            width={670}
             height={400}
             priority
           />
