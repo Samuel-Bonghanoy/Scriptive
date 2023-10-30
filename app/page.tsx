@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-screen items-center justify-between p-24 bg-main">
+      <main className="flex min-h-screen gap-24 p-[2.5rem] bg-main">
         <Hero />
         <Image
-          src="/heroicon.svg"
+          src="/hero.svg"
           alt="Next.js Logo"
-          width={300}
-          height={300}
+          width={650}
+          height={400}
           priority
         />
       </main>
