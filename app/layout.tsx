@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
-const nourd = Rubik({
+const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "500", "700", "900"],
 });
-// const inter = Inter({ subsets: ["latin"] });
+
+const space = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "500", "700", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
