@@ -3,7 +3,7 @@ import { rubik } from "@/app/layout";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col gap-6 w-[60%]">
+    <div className="flex flex-col gap-6 w-[60%] items-start">
       <h1 className={`font-bold text-6xl mt-4 text-white tracking-wider`}>
         SCRIPTIVE
       </h1>
@@ -15,6 +15,9 @@ export default function Hero() {
         A web application engineered to automate the creation of personalized
         letters and documents.
       </p>
+      <button className="mt-4 w-[20rem] border-2 border-black px-2 py-3 rounded-md bg-pink text-black font-bold">
+        Get Started
+      </button>
     </div>
   );
 }
