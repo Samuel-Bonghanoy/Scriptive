@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Navbar() {
@@ -6,7 +7,7 @@ export default function Navbar() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-base-300">
+        <div className="w-full h-[5rem] navbar bg-base-300">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -28,7 +29,15 @@ export default function Navbar() {
               </svg>
             </label>
           </div>
-          <div className="flex-1 px-2 mx-2">Navbar Title</div>
+          <div className="flex-1 px-2 mx-2">
+            <Image
+              src="/logo.svg"
+              alt="Next.js Logo"
+              width={100}
+              height={100}
+              priority
+            />{" "}
+          </div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
@@ -42,7 +51,6 @@ export default function Navbar() {
           </div>
         </div>
         {/* Page content here */}
-        Content
       </div>
       <div className="drawer-side">
         <label
