@@ -10,7 +10,6 @@ export default function Home() {
         <Hero />
         <div>
           <Image
-            className="absolute"
             src="/hero.svg"
             alt="Next.js Logo"
             width={650}
