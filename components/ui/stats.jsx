@@ -28,7 +28,7 @@ function Stats() {
       <div className="stat flex flex-col gap-3 justify-center items-center">
         <div className="flex flex-col gap-3 items-center">
           <div className="stat-title text-white text-lg font-bold">
-            Downloadable as PDF or PNG
+            Pre-styled Templates
           </div>
           <div className="stat-value text-main">
             <svg
@@ -42,7 +42,7 @@ function Stats() {
             </svg>
           </div>
           <div className="stat-desc text-gray-400">
-            <p className="max-w-[ch]">Download your output at high quality</p>
+            <p className="max-w-[ch]">Choose from our styled templates</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Stats() {
       <div className="stat flex flex-col gap-3 justify-center items-center">
         <div className="flex flex-col gap-3 items-center">
           <div className="stat-title text-white text-lg font-bold ">
-            Downloadable as PDF or PNG
+            AI Assistance and Autofill
           </div>
           <div className="stat-value text-main">
             <svg
@@ -64,7 +64,9 @@ function Stats() {
             </svg>
           </div>
           <div className="stat-desc text-gray-400">
-            <p className="max-w-[ch]">Download your output at high quality</p>
+            <p className="max-w-[ch]">
+              Let AI write the body of your letter for you
+            </p>
           </div>
         </div>
       </div>
