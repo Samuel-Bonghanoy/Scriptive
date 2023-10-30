@@ -3,7 +3,11 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
-const nourd = Rubik({ subsets: ["latin"], display: "swap" });
+const nourd = Rubik({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "500", "700", "900"],
+});
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
