@@ -4,7 +4,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
-const rubik = Rubik({
+export const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "500", "700", "900"],
