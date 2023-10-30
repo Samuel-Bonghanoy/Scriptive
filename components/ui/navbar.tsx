@@ -33,8 +33,8 @@ export default function Navbar() {
             <Image
               src="/logo.svg"
               alt="Next.js Logo"
-              width={100}
-              height={100}
+              width={60}
+              height={60}
               priority
             />{" "}
           </div>
