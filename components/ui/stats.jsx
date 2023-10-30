@@ -3,7 +3,7 @@ import Image from "next/image";
 function Stats() {
   return (
     <div className="stats shadow h-[80%]">
-      <div className="stat">
+      <div className="stat flex flex-col gap-3 justify-center">
         <div className="stat-figure text-primary"></div>
         <div className="stat-title">Total Likes</div>
         <div className="stat-value text-primary">25.6K</div>
