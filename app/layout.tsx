@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
-export const rubik = Rubik({
+export const rubik = Montserrat({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "500", "700", "900"],
