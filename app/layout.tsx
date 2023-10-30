@@ -31,7 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${space.className} antialiased`}>{children}</body>
+      <body className={`${space.className} antialiased bg-slate-50`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -24,6 +24,6 @@ const config: Config = {
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss", daisyui],
+  plugins: [daisyui],
 };
 export default config;
