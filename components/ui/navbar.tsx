@@ -39,7 +39,7 @@ export default function Navbar() {
             />{" "}
           </div>
           <div className="flex-none hidden lg:block yes">
-            <ul className="flex gap-6 pr-10 text-black font-bold items-center ">
+            <ul className="flex gap-4 pr-12 text-black font-bold items-center ">
               {/* Navbar menu content here */}
               <li>
                 <a className="hover:bg-subyellow rounded-md px-2 py-2">Home</a>
