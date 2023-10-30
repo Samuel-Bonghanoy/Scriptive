@@ -29,7 +29,7 @@ export default function Navbar() {
               </svg>
             </label>
           </div>
-          <div className="flex-1 px-2 mx-2">
+          <div className="flex-1 px-2 mx-6">
             <Image
               src="/logo.svg"
               alt="Next.js Logo"
@@ -39,13 +39,19 @@ export default function Navbar() {
             />{" "}
           </div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal">
+            <ul className="menu menu-horizontal mr-6">
               {/* Navbar menu content here */}
               <li>
-                <a>Navbar Item 1</a>
+                <a>Home</a>
               </li>
               <li>
-                <a>Navbar Item 2</a>
+                <a>Help</a>
+              </li>
+              <li>
+                <a>Contact Me</a>
+              </li>
+              <li>
+                <a>Login</a>
               </li>
             </ul>
           </div>
@@ -61,10 +67,13 @@ export default function Navbar() {
         <ul className="menu p-4 w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li>
-            <a>Sidebar Item 1</a>
+            <a>Home</a>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <a>Help</a>
+          </li>
+          <li>
+            <a>Contact Me</a>
           </li>
         </ul>
       </div>
