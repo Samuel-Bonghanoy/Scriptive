@@ -38,8 +38,8 @@ export default function Navbar() {
               priority
             />{" "}
           </div>
-          <div className="flex-none hidden lg:block">
-            <ul className="flex gap-6 pr-10 text-black font-bold">
+          <div className="flex-none hidden lg:block yes">
+            <ul className="flex gap-6 pr-10 text-black font-bold items-center ">
               {/* Navbar menu content here */}
               <li>
                 <a>Home</a>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <li>
                 <a>Contact Me</a>
               </li>
-              <li className="border-2 border-black rounded-lg w-[6rem] text-center flex items-center">
+              <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:scale-[1.03] bg-main hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
                 <a>Login</a>
               </li>
             </ul>
