@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex flex-col lg:flex-row min-h-screen max-w-screen gap-8 p-[2.5rem] bg-main">
+      <main className="flex flex-col lg:flex-row min-h-screen max-w-screen gap-8 p-[2.5rem] bg-subyellow">
         <Hero />
         <div>
           <Image
