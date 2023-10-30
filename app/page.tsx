@@ -3,7 +3,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      hi
+      <Image
+        className="border-black border-4 transition-all duration-[30]  hover:border-l-8 hover:border-b-8 rounded-md"
+        src="/heroicon.svg"
+        alt="Next.js Logo"
+        width={300}
+        height={300}
+        priority
+      />
     </main>
   );
 }
