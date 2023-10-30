@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="footer items-center py-6 px-10 bg-base-300 text-neutral-content">
       <aside className="items-center grid-flow-col">
-        <p>Copyright © 2023 - All right reserved by Samuel Bonghanoy</p>
+        <p>Copyright © 2023 - All rights reserved by Samuel Bonghanoy</p>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a>
