@@ -7,7 +7,7 @@ export default function Hero() {
       <h1 className={`${rubik.className} font-black text-6xl mt-4 text-black`}>
         Scriptive
       </h1>
-      <p className="text-white text-4xl max-w-[45ch]">
+      <p className="text-white text-4xl text-bold max-w-[45ch]">
         Optimize your communication, streamline your thoughts with automated
         letter crafting.
       </p>
