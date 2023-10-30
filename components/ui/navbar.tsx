@@ -52,7 +52,7 @@ export default function Navbar() {
                   Contact Me
                 </a>
               </li>
-              <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
+              <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:cursor-pointer hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
                 <a>Login</a>
               </li>
             </ul>
