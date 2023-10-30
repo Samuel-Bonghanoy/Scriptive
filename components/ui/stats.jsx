@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Stats() {
   return (
-    <div className="stats shadow h-[80%] w-[70%] text-white">
-      <div className="stat flex flex-col gap-3 justify-center">
+    <div className="stats shadow h-[80%] w-[70%] bg-base-300 text-white">
+      <div className="stat flex flex-col gap-3 justify-center items-center">
         <div className="flex flex-col gap-3">
           <div className="stat-figure text-primary"></div>
           <div className="stat-title">Total Likes</div>
@@ -12,7 +12,7 @@ function Stats() {
         </div>
       </div>
 
-      <div className="stat flex flex-col gap-3 justify-center">
+      <div className="stat flex flex-col gap-3 justify-center items-center">
         <div className="flex flex-col gap-3">
           <div className="stat-figure text-secondary"></div>
           <div className="stat-title">Page Views</div>
@@ -21,7 +21,7 @@ function Stats() {
         </div>
       </div>
 
-      <div className="stat flex flex-col gap-3 justify-center">
+      <div className="stat flex flex-col gap-3 justify-center items-center">
         <div className="flex flex-col gap-3">
           <div className="stat-figure text-secondary"></div>
           <div className="stat-title">Page Views</div>
