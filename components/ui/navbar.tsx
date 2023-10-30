@@ -42,10 +42,10 @@ export default function Navbar() {
             <ul className="flex gap-6 pr-10 text-black font-bold items-center ">
               {/* Navbar menu content here */}
               <li>
-                <a>Home</a>
+                <a className="hover:bg-subyellow rounded-md px-2 py-2">Home</a>
               </li>
               <li>
-                <a>Help</a>
+                <a className="hover:bg-subyellow rounded-md px-2 py-2">Help</a>
               </li>
               <li>
                 <a>Contact Me</a>
