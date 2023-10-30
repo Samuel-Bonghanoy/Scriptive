@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-screen gap-24 p-[2.5rem] bg-main">
+      <main className="flex flex-col lg:flex-row min-h-screen max-w-screen gap-24 p-[2.5rem] bg-main">
         <Hero />
         <Image
           src="/hero.svg"
