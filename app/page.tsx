@@ -1,5 +1,6 @@
 import Hero from "@/components/ui/hero";
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           />
         </div>
       </main>
+      <Footer />
     </>
   );
 }
