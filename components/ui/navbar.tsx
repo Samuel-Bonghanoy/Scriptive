@@ -16,9 +16,9 @@ export default function Navbar() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#000000"
                 viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
+                className="inline-block w-6 h-6 stroke-black"
               >
                 <path
                   strokeLinecap="round"
@@ -39,7 +39,7 @@ export default function Navbar() {
             />{" "}
           </div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal mr-6 text-black font-bold">
+            <ul className="flex gap-6 pr-10 text-black font-bold">
               {/* Navbar menu content here */}
               <li>
                 <a>Home</a>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <li>
                 <a>Contact Me</a>
               </li>
-              <li className="">
+              <li className="border-2 border-black rounded-lg w-[6rem] text-center flex items-center">
                 <a>Login</a>
               </li>
             </ul>
