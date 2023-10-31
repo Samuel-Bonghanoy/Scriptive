@@ -1,6 +1,6 @@
 function InformalLetter() {
   return (
-    <div className="flex flex-col px-5 py-5 text-black gap-2">
+    <div className="flex h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 shadow-gray-700 shadow-md rounded-md">
       <div className="flex flex-col">
         <div className="flex flex-col justify-end">
           <h1 className="text-xl font-bold self-end">John Smith</h1>

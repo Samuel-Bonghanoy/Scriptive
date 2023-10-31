@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function FormalLetterv2() {
   return (
-    <div className="flex h-full flex-col px-5 py-5 text-black gap-2">
+    <div className="flex h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 shadow-gray-700 shadow-md rounded-md">
       <div className="flex h-full flex-col justify-between">
         <div>
           <div className="flex justify-between">

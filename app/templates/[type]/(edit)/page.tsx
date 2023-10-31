@@ -1,15 +1,17 @@
 "use client";
 
+import React from "react";
 import { usePathname } from "next/navigation";
 import FormalLetter from "@/components/edit/formalLetter";
-import React from "react";
+import FormalLetterv2 from "@/components/edit/formalLetterv2";
+import InformalLetter from "@/components/edit/informalLetter";
 
 export default function Page() {
   const pathName = usePathname();
 
   const breadcrumbs = pathName.split("/").filter((b) => b !== "");
 
-  console.log(breadcrumbs);
+  console.log(breadcrumbs.at(-1));
   return (
     <>
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
@@ -26,7 +28,9 @@ export default function Page() {
       </div>
       <div className="grid grid-cols-[40vw_1fr] py-10 justify-items-center bg-subyellow">
         <div className="bg-subyellow mb-10">page</div>
-        <FormalLetter />
+        {breadcrumbs.at(-1) === "formal" && <FormalLetter />}
+        {breadcrumbs.at(-1) === "formal-logo" && <FormalLetterv2 />}
+        {breadcrumbs.at(-1) === "formal" && <InformalLetter />}
       </div>
     </>
   );
