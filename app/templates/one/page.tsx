@@ -1,5 +1,7 @@
 import React from "react";
 import FormalLetter from "@/components/letters/formalLetter";
+import FormalLetterv2 from "@/components/letters/formalLetterv2";
+import InformalLetter from "@/components/letters/informalLetter";
 
 export default function page() {
   return (
@@ -20,8 +22,7 @@ export default function page() {
             Business/Formal Letter #2
           </p>
           <div className="h-[95%] w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
-            {" "}
-            yes
+            <FormalLetterv2 />
           </div>
         </div>
       </div>
@@ -31,8 +32,7 @@ export default function page() {
             Informal Letter
           </p>
           <div className="h-[95%] w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
-            {" "}
-            yes
+            <InformalLetter />
           </div>
         </div>
       </div>
