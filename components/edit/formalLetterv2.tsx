@@ -25,14 +25,14 @@ function FormalLetterv2() {
             </div>
           </div>
 
-          <p className="text-[0.85rem] uppercase py-3 font-semibold text-yellow-600">
+          <p className="text-[1.35rem] uppercase py-7 font-semibold text-yellow-600">
             Job Reference: Senior Developer
           </p>
-          <div className="text-[1.1rem] font-semibold pb-2 flex text-yellow-600 justify-between">
+          <div className="text-[1.1rem] font-semibold pb-5 flex text-yellow-600 justify-between">
             <p>Dear Recipient,</p>
             <p className="text-[0.9rem]">14th August 2026</p>
           </div>
-          <p className="text-[1rem] pb-2">
+          <p className="text-[1rem] pb-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
             deleniti est? Iste alias veritatis minus accusantium laudantium?
             Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
@@ -40,7 +40,7 @@ function FormalLetterv2() {
             adipisicing elit. Est reprehenderit atque quis numquam officiis
             consectetur eligendi assumenda ut saepe ea?
           </p>
-          <p className="text-[1rem] pb-4">
+          <p className="text-[1rem] pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
             dolore cumque. Voluptatibus, voluptas cumque debitis id dicta
             laudantium optio nihil exercitationem quod ut ducimus atque, dolorem
@@ -48,7 +48,7 @@ function FormalLetterv2() {
             aspernatur consectetur, tenetur consequuntur quas.
           </p>
           <p className="text-[1rem] pb-5">Sincerely,</p>
-          <p className="text-[1rem] pb-2">John Smith</p>
+          <p className="text-[1rem] pb-5">John Smith</p>
           <p className="text-[1rem] pb-5">insert signature</p>
         </div>
         <div className="justify-self-end">
