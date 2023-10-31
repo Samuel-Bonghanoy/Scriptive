@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Stats() {
   return (
-    <div className="stats shadow h-[80%] w-[70%] bg-base-300 text-white">
+    <div className="stats shadow h-[60%] w-[70%] bg-base-300 text-white">
       <div className="stat flex flex-col gap-3 justify-center items-center ">
         <div className="flex flex-col gap-3 items-center">
           <div className="stat-title text-white text-lg font-bold">

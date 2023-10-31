@@ -20,7 +20,8 @@ export default function Home() {
           />
         </div>
       </main>
-      <aside className="h-[60vh] flex max-w-screen justify-center items-center">
+      <aside className="h-[70vh] flex flex-col gap-6 max-w-screen justify-center items-center">
+        <h1>Some of Scriptive's core features</h1>
         <Stats />
       </aside>
       <Footer />
