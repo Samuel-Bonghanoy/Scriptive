@@ -1,31 +1,36 @@
+import Image from "next/image";
+
 function FormalLetterv2() {
   return (
     <div className="flex flex-col px-5 py-5 text-black gap-2">
       <div className="flex flex-col">
-        <h1 className="text-xl font-bold">John Smith</h1>
         <div className="flex justify-between">
-          <p className="text-xs font-semibold">Software Engineer</p>
-          <div className="flex flex-col">
-            <p className="text-[0.65rem] self-end">+123-456-7890</p>
-            <p className="text-[0.65rem] self-end">johnsmith@scriptive.com</p>
-            <p className="text-[0.65rem] self-end">123 Anywhere St. Any City</p>
+          <div>
+            <h1 className="text-xl font-bold">John Smith</h1>
+            <p className="text-xs font-semibold">Software Engineer</p>
+            <p className="text-[0.6rem] ">+123-456-7890</p>
+            <p className="text-[0.6rem] ">johnsmith@scriptive.com</p>
+            <p className="text-[0.6rem] ">123 Anywhere St. Any City</p>
+          </div>
+          <div className="flex flex-col items-end">
+            <Image
+              src="/logo.svg"
+              alt="Next.js Logo"
+              width={60}
+              height={60}
+              priority
+            />
+            <p className="text-[0.6rem] self-center">Scriptive</p>
           </div>
         </div>
-        <hr className="border-1 border-black my-3" />
-        <p className="text-[0.6rem] self-end">14th August 2026</p>
-        <p className="text-[0.6rem] font-semibold">Recipient Name</p>
-        <p className="text-[0.6rem] font-semibold mb-2">
-          Hiring Manager, Scriptive HQ
-        </p>
-
-        <p className="text-[0.6rem] ">+123-456-7890</p>
-        <p className="text-[0.6rem] ">johnsmith@scriptive.com</p>
-        <p className="text-[0.6rem] ">123 Anywhere St. Any City</p>
 
         <p className="text-[0.85rem] uppercase py-3 font-semibold">
           Job Reference: Senior Developer
         </p>
-        <p className="text-[0.55rem] pb-2">Dear Recipient,</p>
+        <div className="text-[0.7rem] font-semibold pb-2 flex justify-between">
+          <p>Dear Recipient,</p>
+          <p className="text-[0.6rem]">14th August 2026</p>
+        </div>
         <p className="text-[0.55rem] pb-2">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
           deleniti est? Iste alias veritatis minus accusantium laudantium?
