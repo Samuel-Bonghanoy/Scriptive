@@ -28,7 +28,7 @@ export default function Page() {
         </ul>
       </div>
       <div className="grid grid-cols-[40vw_1fr] py-10 justify-items-center bg-subyellow">
-        <div className="bg-subyellow mb-10">
+        <div className="bg-subyellow mb-10 w-[85%]">
           <Form />
         </div>
         {breadcrumbs.at(-1) === "formal" && <FormalLetter />}
