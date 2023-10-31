@@ -11,7 +11,6 @@ export default function Page() {
 
   const breadcrumbs = pathName.split("/").filter((b) => b !== "");
 
-  console.log(breadcrumbs.at(-1));
   return (
     <>
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
