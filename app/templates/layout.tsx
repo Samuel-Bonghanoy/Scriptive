@@ -1,9 +1,10 @@
+import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 import StyleIcon from "@mui/icons-material/Style";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex h-[120vh] flex-col md:overflow-hidden">
+    <div className="flex h-[130vh] flex-col md:overflow-hidden">
       <Navbar theme="yellow" />
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
         <ul>
@@ -29,6 +30,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 h-full bg-subyellow items-center justify-items-center">
         {children}
       </div>
+      <Footer />
     </div>
   );
 }

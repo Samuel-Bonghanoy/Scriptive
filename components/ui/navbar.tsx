@@ -35,13 +35,15 @@ export default function Navbar({ theme }: { theme: string }) {
             </label>
           </div>
           <div className="flex-1 px-2 mx-6">
-            <Image
-              src="/logo.svg"
-              alt="Next.js Logo"
-              width={60}
-              height={60}
-              priority
-            />{" "}
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                alt="Next.js Logo"
+                width={60}
+                height={60}
+                priority
+              />{" "}
+            </Link>
           </div>
           <div className="flex-none hidden lg:block yes">
             <ul className="flex gap-4 pr-12 text-black font-bold items-center ">
