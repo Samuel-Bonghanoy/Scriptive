@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import FormalLetter from "@/components/edit/formalLetter";
 import FormalLetterv2 from "@/components/edit/formalLetterv2";
 import InformalLetter from "@/components/edit/informalLetter";
+import Link from "next/link";
 
 export default function Page() {
   const pathName = usePathname();
@@ -16,11 +17,11 @@ export default function Page() {
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
         <ul>
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           {breadcrumbs.map((b) => (
             <li key={b}>
-              <a>{b[0].toUpperCase() + b.slice(1)}</a>
+              <Link href="/templates">{b[0].toUpperCase() + b.slice(1)}</Link>
             </li>
           ))}
         </ul>

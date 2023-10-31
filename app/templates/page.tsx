@@ -13,10 +13,10 @@ export default function Page() {
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
         <ul>
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>Templates</a>
+            <Link href="/templates">Templates</Link>
           </li>
         </ul>
       </div>
