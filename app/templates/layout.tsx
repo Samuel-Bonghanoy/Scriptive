@@ -2,9 +2,9 @@ import Navbar from "@/components/ui/navbar";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex h-screen flex-col md:overflow-hidden">
+    <div className="flex h-[120vh] flex-col md:overflow-hidden">
       <Navbar />
-      <div className="bg-subyellow pl-[4rem] text-sm breadcrumbs">
+      <div className="bg-base-300 pb-3 pl-[4%] text-sm text-white font-semibold breadcrumbs overflow-y-hidden ">
         <ul>
           <li>
             <a>Home</a>
@@ -15,10 +15,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <li>Add Document</li>
         </ul>
       </div>
-      <h1 className="bg-subyellow text-black text-[2.8rem] font-bold max-w-[71ch] leading-snug">
+      <h1 className="pl-[3.5%] bg-subyellow font-bold text-5xl pt-4 text-black tracking-wider uppercase">
         Choose a template
       </h1>
-      <div className="grid grid-cols-3 h-full bg-subyellow items-center justify-items-center">
+      <div className="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 h-full bg-subyellow items-center justify-items-center">
         {children}
       </div>
     </div>
