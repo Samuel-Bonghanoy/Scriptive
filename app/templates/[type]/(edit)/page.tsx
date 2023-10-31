@@ -6,6 +6,7 @@ import FormalLetter from "@/components/edit/formalLetter";
 import FormalLetterv2 from "@/components/edit/formalLetterv2";
 import InformalLetter from "@/components/edit/informalLetter";
 import Link from "next/link";
+import Form from "@/components/edit/form";
 
 export default function Page() {
   const pathName = usePathname();
@@ -27,7 +28,9 @@ export default function Page() {
         </ul>
       </div>
       <div className="grid grid-cols-[40vw_1fr] py-10 justify-items-center bg-subyellow">
-        <div className="bg-subyellow mb-10">page</div>
+        <div className="bg-subyellow mb-10">
+          <Form />
+        </div>
         {breadcrumbs.at(-1) === "formal" && <FormalLetter />}
         {breadcrumbs.at(-1) === "formal-logo" && <FormalLetterv2 />}
         {breadcrumbs.at(-1) === "informal" && <InformalLetter />}
