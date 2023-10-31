@@ -13,7 +13,6 @@ export default function page() {
         <StyleIcon
           sx={{
             width: "4rem",
-            height: "3rem",
             fill: "#000000",
             "&:hover": { fill: "#FFC24A" },
           }}

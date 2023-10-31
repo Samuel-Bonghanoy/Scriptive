@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/letters/formalLetter.jsx"
+    "components/letters/formalLetter.tsx"
   ],
   "exclude": ["node_modules"]
 }
