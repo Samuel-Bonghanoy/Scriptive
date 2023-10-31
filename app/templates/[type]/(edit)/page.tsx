@@ -29,7 +29,7 @@ export default function Page() {
         <div className="bg-subyellow mb-10">page</div>
         {breadcrumbs.at(-1) === "formal" && <FormalLetter />}
         {breadcrumbs.at(-1) === "formal-logo" && <FormalLetterv2 />}
-        {breadcrumbs.at(-1) === "formal" && <InformalLetter />}
+        {breadcrumbs.at(-1) === "informal" && <InformalLetter />}
       </div>
     </>
   );
