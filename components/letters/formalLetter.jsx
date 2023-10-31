@@ -1,6 +1,6 @@
 function FormalLetter() {
   return (
-    <div className="flex flex-col px-5 py-5 text-black gap-2">
+    <div className="flex bg-white flex-col px-5 py-5 text-black gap-2">
       <div className="flex flex-col">
         <h1 className="text-xl font-bold">John Smith</h1>
         <div className="flex justify-between">
