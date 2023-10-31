@@ -8,6 +8,16 @@ import Link from "next/link";
 export default function page() {
   return (
     <>
+      <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Templates</a>
+          </li>
+        </ul>
+      </div>
       <h1 className="pl-[2.5%] bg-slate-50 font-bold text-5xl py-2 mb-2 text-black tracking-wider uppercase flex items-center">
         Choose a template{" "}
         <StyleIcon
@@ -18,7 +28,7 @@ export default function page() {
           }}
         />
       </h1>
-      <div className="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 h-full bg-subyellow items-center justify-items-center">
+      <div className="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 h-screen bg-subyellow items-center justify-items-center">
         <div className="h-full w-full flex justify-center">
           <div className="h-[85%] w-fit ml-2 flex flex-col gap-5 mt-[2rem]">
             <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
