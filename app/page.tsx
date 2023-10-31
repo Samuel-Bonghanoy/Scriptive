@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar theme="white" />
       <main className="flex flex-col lg:flex-row min-h-screen max-w-screen p-[2.5rem] bg-subyellow shadow-main shadow-md">
         <Hero />
         <div className="lg:ml-[-10rem] mt-6 lg:mt-[-1rem]">

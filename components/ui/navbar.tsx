@@ -1,13 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar({ theme }: { theme: string }) {
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full h-[5rem] navbar bg-mainwhite">
+        <div
+          className={`w-full h-[5rem] navbar ${
+            theme === "yellow" ? "bg-main" : "bg-mainwhite"
+          }`}
+        >
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
