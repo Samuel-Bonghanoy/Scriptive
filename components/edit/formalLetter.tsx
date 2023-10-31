@@ -1,6 +1,6 @@
 function FormalLetter() {
   return (
-    <div className="flex h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 rounded-md">
+    <div className="flex h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 shadow-gray-700 shadow-md rounded-md">
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold">John Smith</h1>
         <div className="flex justify-between">
@@ -11,7 +11,7 @@ function FormalLetter() {
             <p className="text-[1.1rem] self-end">123 Anywhere St. Any City</p>
           </div>
         </div>
-        <hr className="border-1 border-black my-3" />
+        <hr className="border-[1.5px] border-black my-3" />
         <p className="text-[1.1rem] self-end">14th August 2026</p>
         <p className="text-[1.1rem] font-semibold">Recipient Name</p>
         <p className="text-[1.1rem] font-semibold mb-2">
@@ -42,7 +42,7 @@ function FormalLetter() {
           consectetur, tenetur consequuntur quas.
         </p>
         <p className="text-[1rem] pb-5">Sincerely,</p>
-        <p className="text-[1rem] pb-2">John Smith</p>
+        <p className="text-[1rem] pb-5">John Smith</p>
         <p className="text-[1rem] pb-5">insert signature</p>
       </div>
     </div>
