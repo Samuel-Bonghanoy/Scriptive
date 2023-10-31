@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
-import { rubik } from "@/app/layout";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col gap-6 w-[60%] items-start z-50 ml-8">
       <h1 className={`font-bold text-6xl mt-4 text-white tracking-wider`}>
@@ -15,7 +19,10 @@ export default function Hero() {
         A web application engineered to automate the creation of personalized
         letters and documents.
       </p>
-      <button className="mt-6 w-[20rem] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[6px] hover:border-b-[6px]">
+      <button
+        onClick={() => router.push("/templates")}
+        className="mt-6 w-[20rem] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[6px] hover:border-b-[6px]"
+      >
         Get Started
       </button>
     </div>

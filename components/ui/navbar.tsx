@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar({ theme }: { theme: string }) {
@@ -46,15 +47,28 @@ export default function Navbar({ theme }: { theme: string }) {
             <ul className="flex gap-4 pr-12 text-black font-bold items-center ">
               {/* Navbar menu content here */}
               <li>
-                <a className="hover:bg-subyellow rounded-md px-2 py-2">Home</a>
+                <Link
+                  href="/"
+                  className="hover:bg-subyellow rounded-md px-2 py-2"
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <a className="hover:bg-subyellow rounded-md px-2 py-2">Help</a>
+                <Link
+                  href="/help"
+                  className="hover:bg-subyellow rounded-md px-2 py-2"
+                >
+                  Help
+                </Link>
               </li>
               <li>
-                <a className="hover:bg-subyellow rounded-md px-2 py-2">
+                <Link
+                  href="/contact"
+                  className="hover:bg-subyellow rounded-md px-2 py-2"
+                >
                   Contact Me
-                </a>
+                </Link>
               </li>
               <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:cursor-pointer hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
                 <a>Login</a>
@@ -73,13 +87,13 @@ export default function Navbar({ theme }: { theme: string }) {
         <ul className="menu p-4 w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>Help</a>
+            <Link href="/help">Help</Link>
           </li>
           <li>
-            <a>Contact Me</a>
+            <a href="/contact">Contact Me</a>
           </li>
         </ul>
       </div>

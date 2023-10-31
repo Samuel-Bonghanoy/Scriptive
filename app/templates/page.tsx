@@ -24,7 +24,7 @@ export default function page() {
           <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
             Formal Letter with Logo
           </p>
-          <Link className="h-full" href="/formalv1">
+          <Link className="h-full" href="/formalv2">
             <div className="h-[100%] max-h-[40rem] duration-200 transition-all hover:scale-[1.03] hover:shadow-black w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
               <FormalLetterv2 />
             </div>
@@ -36,7 +36,7 @@ export default function page() {
           <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
             Informal Letter
           </p>
-          <Link className="h-full" href="/formalv1">
+          <Link className="h-full" href="/informal">
             <div className="h-[100%] max-h-[40rem] duration-200 transition-all hover:scale-[1.03] hover:shadow-black w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
               <InformalLetter />
             </div>
