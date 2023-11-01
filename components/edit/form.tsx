@@ -1,6 +1,18 @@
 import React from "react";
 
-export default function Form() {
+export default async function Form() {
+  // const completion = await openai.chat.completions.create({
+  //   model: "gpt-3.5-turbo",
+  //   messages: [
+  //     {
+  //       role: "user",
+  //       content: "What is the most important thing to keep in mind in life?",
+  //     },
+  //   ],
+  // });
+
+  // console.log(completion.choices[0].message);
+
   return (
     <form className="flex flex-col gap-7 w-full">
       <div className="form-control w-full  ">
