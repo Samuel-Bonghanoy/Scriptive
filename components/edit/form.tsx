@@ -18,31 +18,6 @@ export default function Form() {
     <>
       <Modal type="sender" />
       <form className="flex flex-col gap-7 w-full">
-        <div className="form-control w-full mt-[-1rem]">
-          <label className="label text-black">
-            <span className="label-text text-black font-semibold">
-              To whom are you sending this letter to?
-            </span>
-          </label>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full bg-white text-black"
-          />
-        </div>
-
-        <div className="form-control w-full mt-[-1rem]">
-          <label className="label text-black">
-            <span className="label-text text-black font-semibold">
-              What is their address?
-            </span>
-          </label>
-          <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered w-full bg-white text-black"
-          />
-        </div>
         <div className="flex flex-col">
           <label className="label text-black">
             <span className="label-text text-black font-semibold">
