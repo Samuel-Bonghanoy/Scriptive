@@ -4,8 +4,8 @@ export default function RecipientForm() {
   return (
     <form className="flex flex-col gap-7 w-full">
       <div className="form-control w-full  ">
-        <label className="label">
-          <span className="label-text text-black font-semibold">
+        <label className="label text-white">
+          <span className="label-text text-white font-semibold">
             What is the recipient&apos;s name?
           </span>
         </label>
@@ -18,7 +18,7 @@ export default function RecipientForm() {
 
       <div className="form-control w-full mt-[-1rem]">
         <label className="label text-black">
-          <span className="label-text text-black font-semibold">
+          <span className="label-text text-white font-semibold">
             What is the recipient&apos;s address?
           </span>
         </label>
@@ -31,7 +31,7 @@ export default function RecipientForm() {
 
       <div className="form-control w-full mt-[-1rem]">
         <label className="label text-black">
-          <span className="label-text text-black font-semibold">
+          <span className="label-text text-white font-semibold">
             What is the recipient&apos;s job title?
           </span>
         </label>

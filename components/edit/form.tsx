@@ -1,7 +1,13 @@
+"use client";
+
 import React from "react";
+import { useState } from "react";
 import Modal from "../ui/modal";
+import { createPortal } from "react-dom";
+import SenderForm from "../ui/senderForm";
 
 export default function Form() {
+  const [type, setType] = useState("sender");
   // const completion = await openai.chat.completions.create({
   //   model: "gpt-3.5-turbo",
   //   messages: [
@@ -16,8 +22,44 @@ export default function Form() {
 
   return (
     <>
-      <Modal type="sender" />
-      <form className="flex flex-col gap-7 w-full">
+      <div className="flex flex-col">
+        <button className="w-[60%]" onClick={() => setType("sender")}>
+          <Modal type="sender" />
+        </button>
+        <button className="w-[60%]" onClick={() => setType("recipient")}>
+          <Modal type="recipient" />
+        </button>
+      </div>
+      {createPortal(
+        <>
+          <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box bg-base-300">
+              <SenderForm type={type} />
+              <div className="modal-action">
+                <label htmlFor="my_modal_6" className="btn">
+                  Close!
+                </label>
+              </div>
+            </div>
+          </div>
+        </>,
+        document.body
+      )}
+      <form className="flex flex-col gap-3 w-full">
+        <div className="form-control w-full  ">
+          <label className="label">
+            <span className="label-text text-black font-semibold">
+              What date will this letter be sent out on?
+            </span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full bg-white text-black"
+          />
+        </div>
+
         <div className="flex flex-col">
           <label className="label text-black">
             <span className="label-text text-black font-semibold">
@@ -29,10 +71,17 @@ export default function Form() {
             placeholder="Bio"
           ></textarea>
         </div>
-        <input
-          type="file"
-          className="file-input file-input-bordered w-full max-w-xs bg-base-300"
-        />
+        <div className="flex flex-col">
+          <label className="label text-black">
+            <span className="label-text text-black font-semibold">
+              Upload your logo (if applicable)
+            </span>
+          </label>
+          <input
+            type="file"
+            className="file-input file-input-bordered w-full max-w-xs bg-base-300"
+          />
+        </div>
       </form>
     </>
   );

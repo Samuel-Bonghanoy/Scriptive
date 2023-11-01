@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function SenderForm() {
+export default function SenderForm({ type }: { type: string }) {
   return (
     <form className="flex flex-col gap-7 w-full">
       <div className="form-control w-full  ">
         <label className="label">
-          <span className="label-text text-black font-semibold">
-            What is your name?
+          <span className="label-text text-white font-semibold">
+            What is {type === "sender" ? "your" : "the recipient's"} name?
           </span>
         </label>
         <input
@@ -17,9 +17,9 @@ export default function SenderForm() {
       </div>
 
       <div className="form-control w-full mt-[-1rem]">
-        <label className="label text-black">
-          <span className="label-text text-black font-semibold">
-            What is your address?
+        <label className="label text-white">
+          <span className="label-text text-white font-semibold">
+            What is {type === "sender" ? "your" : "the recipient's"} address?
           </span>
         </label>
         <input
@@ -30,9 +30,9 @@ export default function SenderForm() {
       </div>
 
       <div className="form-control w-full mt-[-1rem]">
-        <label className="label text-black">
-          <span className="label-text text-black font-semibold">
-            What is your job title?
+        <label className="label text-white">
+          <span className="label-text text-white font-semibold">
+            What is {type === "sender" ? "your" : "the recipient's"} job title?
           </span>
         </label>
         <input
@@ -43,9 +43,10 @@ export default function SenderForm() {
       </div>
 
       <div className="form-control w-full mt-[-1rem]">
-        <label className="label text-black">
-          <span className="label-text text-black font-semibold">
-            What is your contact number?
+        <label className="label text-white">
+          <span className="label-text text-white font-semibold">
+            What is {type === "sender" ? "your" : "the recipient's"} contact
+            number?
           </span>
         </label>
         <input
@@ -55,9 +56,9 @@ export default function SenderForm() {
         />
       </div>
       <div className="form-control w-full mt-[-1rem]">
-        <label className="label text-black">
-          <span className="label-text text-black font-semibold">
-            What is your email?
+        <label className="label text-white">
+          <span className="label-text text-white font-semibold">
+            What is {type === "sender" ? "your" : "the recipient's"} email?
           </span>
         </label>
         <input
