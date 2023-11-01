@@ -22,7 +22,7 @@ export default function Page() {
             <Link href="/templates">Templates</Link>
           </li>
           <li>
-            <Link href="/">Create</Link>
+            <Link href="/templates">Create</Link>
           </li>
         </ul>
       </div>
