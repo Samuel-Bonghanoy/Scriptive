@@ -8,6 +8,7 @@ import SenderForm from "../ui/senderForm";
 
 export default function Form() {
   const [type, setType] = useState("sender");
+
   // const completion = await openai.chat.completions.create({
   //   model: "gpt-3.5-turbo",
   //   messages: [
@@ -30,22 +31,19 @@ export default function Form() {
           <Modal type="recipient" />
         </button>
       </div>
-      {createPortal(
-        <>
-          <input type="checkbox" id="my_modal_6" className="modal-toggle" />
-          <div className="modal">
-            <div className="modal-box bg-base-300">
-              <SenderForm type={type} />
-              <div className="modal-action">
-                <label htmlFor="my_modal_6" className="btn">
-                  Close!
-                </label>
-              </div>
-            </div>
+
+      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box bg-base-300">
+          <SenderForm type={type} />
+          <div className="modal-action">
+            <label htmlFor="my_modal_6" className="btn bg-subyellow text-black">
+              Close!
+            </label>
           </div>
-        </>,
-        document.body
-      )}
+        </div>
+      </div>
+
       <form className="flex flex-col gap-3 w-full">
         <div className="form-control w-full  ">
           <label className="label">

@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Navbar({ theme }: { theme: string }) {
   return (
-    <div className="drawer">
+    <div className="drawer sticky top-0">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
+      <div className="drawer-content flex flex-col shadow-gray-500 shadow-sm">
         {/* Navbar */}
         <div
           className={`w-full h-[5rem] navbar ${

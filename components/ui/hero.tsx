@@ -7,7 +7,7 @@ export default function Hero() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col gap-6 w-[60%] items-start z-50 ml-8">
+    <div className="flex flex-col gap-6 w-[60%] items-start  ml-8">
       <h1 className={`font-bold text-6xl mt-4 text-white tracking-wider`}>
         SCRIPTIVE
       </h1>

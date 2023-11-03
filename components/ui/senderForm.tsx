@@ -1,8 +1,20 @@
+"use client";
+
 import React from "react";
+import { useForm } from "react-hook-form";
 
 export default function SenderForm({ type }: { type: string }) {
+  const { register, handleSubmit } = useForm();
+
+  function onSubmit(data) {
+    console.log(data);
+  }
+
   return (
-    <form className="flex flex-col gap-7 w-full">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col gap-7 w-full"
+    >
       <div className="form-control w-full  ">
         <label className="label">
           <span className="label-text text-white font-semibold">
@@ -13,6 +25,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
+          {...register("name")}
         />
       </div>
 
@@ -26,6 +39,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
+          {...register("address")}
         />
       </div>
 
@@ -39,6 +53,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
+          {...register("job title")}
         />
       </div>
 
@@ -53,6 +68,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
+          {...register("contactNum")}
         />
       </div>
       <div className="form-control w-full mt-[-1rem]">
@@ -65,8 +81,10 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
+          {...register("email")}
         />
       </div>
+      <button type="submit">Apply Changes</button>
     </form>
   );
 }
