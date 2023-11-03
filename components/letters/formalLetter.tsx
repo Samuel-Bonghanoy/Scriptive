@@ -32,14 +32,12 @@ function FormalLetter() {
           Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
           maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
           adipisicing elit. Est reprehenderit atque quis numquam officiis
-          consectetur eligendi assumenda ut saepe ea?
-        </p>
-        <p className="text-[0.55rem] pb-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dolore
-          cumque. Voluptatibus, voluptas cumque debitis id dicta laudantium
-          optio nihil exercitationem quod ut ducimus atque, dolorem odio omnis
-          vitae autem maiores quae cupiditate eligendi sequi aspernatur
-          consectetur, tenetur consequuntur quas.
+          consectetur eligendi assumenda ut saepe ea? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Dolor, dolore cumque. Voluptatibus,
+          voluptas cumque debitis id dicta laudantium optio nihil exercitationem
+          quod ut ducimus atque, dolorem odio omnis vitae autem maiores quae
+          cupiditate eligendi sequi aspernatur consectetur, tenetur consequuntur
+          quas.
         </p>
         <p className="text-[0.55rem] pb-5">Sincerely,</p>
         <p className="text-[0.55rem] pb-2">John Smith</p>

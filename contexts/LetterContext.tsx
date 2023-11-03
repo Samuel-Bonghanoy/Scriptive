@@ -10,14 +10,49 @@ import {
   useState,
 } from "react";
 
+const defaultLetterContent: letter = {
+  senderName: "John Smith",
+  senderAddress: "123 Anywhere St. Any City",
+  senderTitle: "Software Engineer",
+  senderContactNum: "123-456-7890",
+  senderEmail: "johnsmith@scriptive.com",
+  recipientName: "Recipient",
+  recipientAddress: "123 Anywhere St. Any City",
+  recipientTitle: "Software Engineer",
+  recipientContactNum: "123-456-7890",
+  recipientEmail: "johnsmith@scriptive.com",
+  content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
+  deleniti est? Iste alias veritatis minus accusantium laudantium?
+  Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
+  maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
+  adipisicing elit. Est reprehenderit atque quis numquam officiis
+  consectetur eligendi assumenda ut saepe ea?`,
+  date: "14th August 2026",
+};
+
+type letter = {
+  senderName: string;
+  senderAddress: string;
+  senderTitle: string;
+  senderContactNum: string;
+  senderEmail: string;
+  recipientName: string;
+  recipientAddress: string;
+  recipientTitle: string;
+  recipientContactNum: string;
+  recipientEmail: string;
+  content: string;
+  date: string;
+};
+
 type LetterContextType = {
-  currentLetter: String;
-  setCurrentLetter: Dispatch<SetStateAction<String>>;
+  letterContent: letter;
+  setLetterContent: Dispatch<SetStateAction<letter>>;
 };
 
 const LetterContext = createContext<LetterContextType>({
-  currentLetter: "",
-  setCurrentLetter: () => {},
+  letterContent: defaultLetterContent,
+  setLetterContent: () => {},
 });
 
 export const LetterContextProvider = ({
@@ -25,10 +60,11 @@ export const LetterContextProvider = ({
 }: {
   children: ReactNode;
 }) => {
-  const [currentLetter, setCurrentLetter] = useState<String>("");
+  const [letterContent, setLetterContent] =
+    useState<letter>(defaultLetterContent);
 
   return (
-    <LetterContext.Provider value={{ currentLetter, setCurrentLetter }}>
+    <LetterContext.Provider value={{ letterContent, setLetterContent }}>
       {children}
     </LetterContext.Provider>
   );
