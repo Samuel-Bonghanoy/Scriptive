@@ -16,7 +16,7 @@ const defaultLetterContent: letter = {
   senderTitle: "Software Engineer",
   senderContactNum: "123-456-7890",
   senderEmail: "johnsmith@scriptive.com",
-  recipientName: "Recipient",
+  recipientName: "Recipient Name",
   recipientAddress: "123 Anywhere St. Any City",
   recipientTitle: "Software Engineer",
   recipientContactNum: "123-456-7890",
@@ -26,7 +26,14 @@ const defaultLetterContent: letter = {
   Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
   maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
   adipisicing elit. Est reprehenderit atque quis numquam officiis
-  consectetur eligendi assumenda ut saepe ea?`,
+  consectetur eligendi assumenda ut saepe ea?
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
+  deleniti est? Iste alias veritatis minus accusantium laudantium?
+  Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
+  maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
+  adipisicing elit. Est reprehenderit atque quis numquam officiis
+  consectetur eligendi assumenda ut saepe ea?
+  `,
   date: "14th August 2026",
 };
 
