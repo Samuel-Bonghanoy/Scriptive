@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import FormalLetter from "@/components/edit/formalLetter";
 import FormalLetterv2 from "@/components/edit/formalLetterv2";
