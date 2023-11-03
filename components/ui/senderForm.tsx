@@ -1,13 +1,17 @@
 "use client";
 
+import { LetterData } from "@/contexts/LetterContext";
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";
 
 export default function SenderForm({ type }: { type: string }) {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const { setLetterContent, letterContent } = LetterData();
 
   function onSubmit(data: FieldValues) {
-    console.log(data);
+    setLetterContent({ ...letterContent, ...data });
+    reset();
+    console.log(letterContent, data);
   }
 
   return (
@@ -25,7 +29,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
-          {...register("name")}
+          {...register("senderName")}
         />
       </div>
 
@@ -39,7 +43,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
-          {...register("address")}
+          {...register("senderAddress")}
         />
       </div>
 
@@ -53,7 +57,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
-          {...register("job title")}
+          {...register("senderTitle")}
         />
       </div>
 
@@ -68,7 +72,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
-          {...register("contactNum")}
+          {...register("senderContactNum")}
         />
       </div>
       <div className="form-control w-full mt-[-1rem]">
@@ -81,7 +85,7 @@ export default function SenderForm({ type }: { type: string }) {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
-          {...register("email")}
+          {...register("senderEmail")}
         />
       </div>
       <div className="flex justify-end items-end gap-3">
