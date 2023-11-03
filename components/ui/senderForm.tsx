@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { useForm } from "react-hook-form";
+import { FieldValues, useForm } from "react-hook-form";
 
 export default function SenderForm({ type }: { type: string }) {
   const { register, handleSubmit } = useForm();
 
-  function onSubmit(data) {
+  function onSubmit(data: FieldValues) {
     console.log(data);
   }
 
@@ -84,7 +84,22 @@ export default function SenderForm({ type }: { type: string }) {
           {...register("email")}
         />
       </div>
-      <button type="submit">Apply Changes</button>
+      <div className="flex justify-end items-end gap-3">
+        <button
+          type="submit"
+          className=" rounded-md w-fit font-semibold bg-subyellow text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+        >
+          Apply Changes
+        </button>
+        <div className="modal-action">
+          <label
+            htmlFor="my_modal_6"
+            className="btn bg-pink hover:bg-red-600 text-black"
+          >
+            Close
+          </label>
+        </div>
+      </div>
     </form>
   );
 }

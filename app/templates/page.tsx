@@ -1,16 +1,11 @@
-"use client";
-
 import React from "react";
 import FormalLetter from "@/components/letters/formalLetter";
 import FormalLetterv2 from "@/components/letters/formalLetterv2";
 import InformalLetter from "@/components/letters/informalLetter";
 import StyleIcon from "@mui/icons-material/Style";
 import Link from "next/link";
-import { LetterData } from "@/contexts/LetterContext";
 
 export default function Page() {
-  const { setCurrentLetter } = LetterData();
-
   return (
     <>
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
@@ -40,11 +35,7 @@ export default function Page() {
             <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
               Business/Formal Letter
             </p>
-            <Link
-              className="h-full"
-              href="/templates/formal"
-              onClick={() => setCurrentLetter("formal-logo")}
-            >
+            <Link className="h-full" href="/templates/formal">
               <div className="h-[100%] max-h-[40rem] duration-200 transition-all hover:scale-[1.03] hover:shadow-black w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
                 <FormalLetter />
               </div>
@@ -56,11 +47,7 @@ export default function Page() {
             <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
               Formal Letter with Logo
             </p>
-            <Link
-              className="h-full"
-              href="/templates/formal-logo"
-              onClick={() => setCurrentLetter("formal-logo")}
-            >
+            <Link className="h-full" href="/templates/formal-logo">
               <div className="h-[100%] max-h-[40rem] duration-200 transition-all hover:scale-[1.03] hover:shadow-black w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
                 <FormalLetterv2 />
               </div>
@@ -72,11 +59,7 @@ export default function Page() {
             <p className="self-start bg-subyellow font-bold text-3xl  text-black ">
               Informal Letter
             </p>
-            <Link
-              className="h-full"
-              href="/templates/informal"
-              onClick={() => setCurrentLetter("formal-logo")}
-            >
+            <Link className="h-full" href="/templates/informal">
               <div className="h-[100%] max-h-[40rem] duration-200 transition-all hover:scale-[1.03] hover:shadow-black w-[28rem] bg-white rounded-md shadow-gray-600 shadow-md">
                 <InformalLetter />
               </div>

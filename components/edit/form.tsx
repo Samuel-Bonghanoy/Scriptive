@@ -36,11 +36,6 @@ export default function Form() {
       <div className="modal">
         <div className="modal-box bg-base-300">
           <SenderForm type={type} />
-          <div className="modal-action">
-            <label htmlFor="my_modal_6" className="btn bg-subyellow text-black">
-              Close!
-            </label>
-          </div>
         </div>
       </div>
 
