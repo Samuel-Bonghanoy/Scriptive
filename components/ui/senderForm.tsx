@@ -12,7 +12,6 @@ export default function SenderForm({ type }: { type: string }) {
   function onSubmit(data: FieldValues) {
     setLetterContent({ ...letterContent, ...data });
     reset();
-    console.log(data);
   }
 
   if (type === "recipient") return <RecipientForm type={type} />;

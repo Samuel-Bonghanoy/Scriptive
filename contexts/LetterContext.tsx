@@ -21,18 +21,9 @@ const defaultLetterContent: letter = {
   recipientTitle: "Software Engineer",
   recipientContactNum: "123-456-7890",
   recipientEmail: "johnsmith@scriptive.com",
-  content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
-  deleniti est? Iste alias veritatis minus accusantium laudantium?
-  Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
-  maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
-  adipisicing elit. Est reprehenderit atque quis numquam officiis
-  consectetur eligendi assumenda ut saepe ea?
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore
-  deleniti est? Iste alias veritatis minus accusantium laudantium?
-  Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum
-  maxime consequuntur! Lorem ipsum dolor, sit amet consectetur
-  adipisicing elit. Est reprehenderit atque quis numquam officiis
-  consectetur eligendi assumenda ut saepe ea?
+  content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit doloredeleniti est? Iste alias veritatis minus accusantium laudantium?Incidunt iure, eos porro a totam itaque reprehenderit aperiam eummaxime consequuntur! Lorem ipsum dolor, sit amet consectetur
+  adipisicing elit. Est reprehenderit atque quis numquam officiisconsectetur eligendi assumenda ut saepe ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dolore deleniti est? Iste alias veritatis minus accusantium laudantium?
+  Incidunt iure, eos porro a totam itaque reprehenderit aperiam eum maxime consequuntur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est reprehenderit atque quis numquam officiis consectetur eligendi assumenda ut saepe ea?
   `,
   date: "14th August 2026",
   topic: "Job Reference: Senior Developer",

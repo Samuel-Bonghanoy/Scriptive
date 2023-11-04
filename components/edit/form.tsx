@@ -16,7 +16,7 @@ export default function Form() {
   function onSubmit(data: FieldValues) {
     setLetterContent({ ...letterContent, ...data });
     reset();
-    console.log(data);
+    console.log(data.content.split("\n"));
   }
 
   // const completion = await openai.chat.completions.create({
