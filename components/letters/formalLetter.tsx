@@ -41,7 +41,6 @@ function FormalLetter() {
         </p>
         <p className="text-[0.55rem] pb-5">Sincerely,</p>
         <p className="text-[0.55rem] pb-2">John Smith</p>
-        <p className="text-[0.55rem] pb-5">insert signature</p>
       </div>
     </div>
   );

@@ -89,7 +89,7 @@ export default function Form() {
             </span>
           </label>
           <textarea
-            className="textarea textarea-bordered h-[15rem] bg-white text-black"
+            className="textarea textarea-bordered h-[15rem] max-h-[15rem] bg-white text-black"
             placeholder="Enter your letter body"
             {...register("content")}
             defaultValue={letterContent?.content}

@@ -44,7 +44,6 @@ function FormalLetterv2() {
           <p className="text-[1rem] pb-5">{letterContent.content}</p>
           <p className="text-[1rem] pb-5">Sincerely,</p>
           <p className="text-[1rem] pb-5">{letterContent.senderName}</p>
-          <p className="text-[1rem] pb-5">insert signature</p>
         </div>
         <div className="justify-self-end">
           <hr className="border-1 border-black my-3" />
