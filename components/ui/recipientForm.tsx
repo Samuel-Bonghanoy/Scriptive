@@ -30,6 +30,7 @@ export default function RecipientForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("recipientName")}
+          defaultValue={letterContent?.recipientName}
         />
       </div>
 
@@ -44,6 +45,7 @@ export default function RecipientForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("recipientAddress")}
+          defaultValue={letterContent?.recipientAddress}
         />
       </div>
 
@@ -58,6 +60,7 @@ export default function RecipientForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("recipientTitle")}
+          defaultValue={letterContent?.recipientTitle}
         />
       </div>
 
@@ -73,6 +76,7 @@ export default function RecipientForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("recipientContactNum")}
+          defaultValue={letterContent?.recipientContactNum}
         />
       </div>
       <div className="form-control w-full mt-[-1rem]">
@@ -86,6 +90,7 @@ export default function RecipientForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("recipientEmail")}
+          defaultValue={letterContent?.recipientEmail}
         />
       </div>
       <div className="flex justify-end items-end gap-3">

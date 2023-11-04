@@ -33,6 +33,7 @@ export default function SenderForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("senderName")}
+          defaultValue={letterContent?.senderName}
         />
       </div>
 
@@ -47,6 +48,7 @@ export default function SenderForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("senderAddress")}
+          defaultValue={letterContent?.senderAddress}
         />
       </div>
 
@@ -61,6 +63,7 @@ export default function SenderForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("senderTitle")}
+          defaultValue={letterContent?.senderTitle}
         />
       </div>
 
@@ -76,6 +79,7 @@ export default function SenderForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("senderContactNum")}
+          defaultValue={letterContent?.senderContactNum}
         />
       </div>
       <div className="form-control w-full mt-[-1rem]">
@@ -89,6 +93,7 @@ export default function SenderForm({ type }: { type: string }) {
           placeholder="Type here"
           className="input input-bordered w-full bg-white text-black"
           {...register("senderEmail")}
+          defaultValue={letterContent?.senderEmail}
         />
       </div>
       <div className="flex justify-end items-end gap-3">

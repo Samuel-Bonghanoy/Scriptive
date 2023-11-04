@@ -58,7 +58,9 @@ function FormalLetterv2() {
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-[1.1rem] self-end">+123-456-7890</p>
+              <p className="text-[1.1rem] self-end">
+                {letterContent.recipientContactNum}
+              </p>
               <p className="text-[1.1rem] self-end">
                 {letterContent.recipientEmail}
               </p>
