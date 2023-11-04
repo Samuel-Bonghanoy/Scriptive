@@ -44,7 +44,7 @@ function FormalLetter() {
         </p>
         <div className="text-[1rem] pb-5  whitespace-pre-line">
           {letterContent.content.split("\n").map((sec) => (
-            <p className="text-[1rem] pb-5 " key={sec}>
+            <p className="text-[1rem] pb-3" key={sec}>
               {sec}
               <br />
             </p>
