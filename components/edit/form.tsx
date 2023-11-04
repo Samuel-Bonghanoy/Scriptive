@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { FormEvent } from "react";
 import { useState } from "react";
 import Modal from "../ui/modal";
 import SenderForm from "../ui/senderForm";
@@ -49,7 +49,10 @@ export default function Form() {
         </div>
       </div>
 
-      <form className="flex flex-col gap-3 w-full">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col gap-3 w-full"
+      >
         <div className="form-control w-full  ">
           <label className="label">
             <span className="label-text text-black font-semibold">
@@ -60,6 +63,7 @@ export default function Form() {
             type="text"
             placeholder="Type here"
             className="input input-bordered w-full bg-white text-black"
+            {...register("date")}
           />
         </div>
         <div className="form-control w-full  ">
@@ -72,6 +76,7 @@ export default function Form() {
             type="text"
             placeholder="Type here"
             className="input input-bordered w-full bg-white text-black"
+            {...register("topic")}
           />
         </div>
 
@@ -84,6 +89,7 @@ export default function Form() {
           <textarea
             className="textarea textarea-bordered bg-white text-black"
             placeholder="Bio"
+            {...register("content")}
           ></textarea>
         </div>
         <div className="flex flex-col">
@@ -97,6 +103,12 @@ export default function Form() {
             className="file-input file-input-bordered w-full max-w-xs bg-base-300"
           />
         </div>
+        <button
+          type="submit"
+          className=" rounded-md w-fit font-semibold bg-green text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+        >
+          Apply Changes
+        </button>
       </form>
     </>
   );
