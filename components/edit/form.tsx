@@ -7,6 +7,7 @@ import SenderForm from "../ui/senderForm";
 import { FieldValues, useForm } from "react-hook-form";
 import { LetterData } from "@/contexts/LetterContext";
 import { createPDF } from "@/utils/createPDF";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Form() {
   const [type, setType] = useState("sender");
@@ -22,6 +23,7 @@ export default function Form() {
 
   return (
     <>
+      <ToastContainer />
       <div className="flex flex-col">
         <button className="w-[60%]" onClick={() => setType("sender")}>
           <Modal type="sender" />
@@ -86,6 +88,18 @@ export default function Form() {
         </div>
 
         <button
+          onClick={() =>
+            toast.success("Successfully applied changes", {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+            })
+          }
           type="submit"
           className=" rounded-md w-fit font-semibold mt-4 bg-green-500 text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-green-600 hover:scale-[1.03]"
         >
