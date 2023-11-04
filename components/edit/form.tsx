@@ -95,20 +95,10 @@ export default function Form() {
             defaultValue={letterContent?.content}
           ></textarea>
         </div>
-        <div className="flex flex-col">
-          <label className="label text-black">
-            <span className="label-text text-black font-semibold">
-              Upload your logo (if applicable)
-            </span>
-          </label>
-          <input
-            type="file"
-            className="file-input file-input-bordered w-full max-w-xs bg-base-300"
-          />
-        </div>
+
         <button
           type="submit"
-          className=" rounded-md w-fit font-semibold bg-green text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+          className=" rounded-md w-fit font-semibold mt-4 bg-green text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
         >
           Apply Changes
         </button>
