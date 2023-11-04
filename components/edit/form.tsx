@@ -6,6 +6,8 @@ import Modal from "../ui/modal";
 import SenderForm from "../ui/senderForm";
 import { FieldValues, useForm } from "react-hook-form";
 import { LetterData } from "@/contexts/LetterContext";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
 
 export default function Form() {
   const [type, setType] = useState("sender");
@@ -18,18 +20,6 @@ export default function Form() {
     reset();
     console.log(data.content.split("\n"));
   }
-
-  // const completion = await openai.chat.completions.create({
-  //   model: "gpt-3.5-turbo",
-  //   messages: [
-  //     {
-  //       role: "user",
-  //       content: "What is the most important thing to keep in mind in life?",
-  //     },
-  //   ],
-  // });
-
-  // console.log(completion.choices[0].message);
 
   return (
     <>
@@ -98,11 +88,17 @@ export default function Form() {
 
         <button
           type="submit"
-          className=" rounded-md w-fit font-semibold mt-4 bg-green text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+          className=" rounded-md w-fit font-semibold mt-4 bg-green-500 text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-green-600 hover:scale-[1.03]"
         >
           Apply Changes
         </button>
       </form>
+      <button
+        type="submit"
+        className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+      >
+        Download PDF
+      </button>
     </>
   );
 }

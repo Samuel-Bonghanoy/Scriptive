@@ -21,7 +21,6 @@ const config: Config = {
         darktext: "#333333",
         graytext: "#757575",
         subyellow: "#FFC24A",
-        green: "#4B9960",
         pink: "#F47068",
       },
     },
