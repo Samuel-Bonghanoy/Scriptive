@@ -20,6 +20,11 @@
 
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 
+## TO DO
+- Add a backend with firebase to save previously generated letters
+- Implement firebase auth
+- Integrate openai API to autofill letter body
+
 ## Setup
 
 Run this command to clone the repository into your desired directory
