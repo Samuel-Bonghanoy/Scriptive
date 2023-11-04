@@ -42,14 +42,14 @@ function FormalLetter() {
         <p className="text-[1rem] pb-5 whitespace-pre-line">
           Dear {letterContent.recipientName},
         </p>
-        <p className="text-[1rem] pb-5  whitespace-pre-line">
+        <div className="text-[1rem] pb-5  whitespace-pre-line">
           {letterContent.content.split("\n").map((sec) => (
-            <div className="text-[1rem] pb-5 " key={sec}>
+            <p className="text-[1rem] pb-5 " key={sec}>
               {sec}
               <br />
-            </div>
+            </p>
           ))}
-        </p>
+        </div>
         <p className="text-[1rem] pb-5">Sincerely,</p>
         <p className="text-[1rem] pb-5">{letterContent.senderName}</p>
         <p className="text-[1rem] pb-5">insert signature</p>
