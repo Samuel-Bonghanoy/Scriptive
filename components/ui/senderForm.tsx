@@ -3,6 +3,7 @@
 import { LetterData } from "@/contexts/LetterContext";
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";
+import RecipientForm from "./recipientForm";
 
 export default function SenderForm({ type }: { type: string }) {
   const { register, handleSubmit, reset } = useForm();
@@ -11,8 +12,10 @@ export default function SenderForm({ type }: { type: string }) {
   function onSubmit(data: FieldValues) {
     setLetterContent({ ...letterContent, ...data });
     reset();
-    console.log(letterContent, data);
+    console.log(data);
   }
+
+  if (type === "recipient") return <RecipientForm type={type} />;
 
   return (
     <form

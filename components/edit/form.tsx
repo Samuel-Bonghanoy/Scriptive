@@ -3,7 +3,6 @@
 import React from "react";
 import { useState } from "react";
 import Modal from "../ui/modal";
-import { createPortal } from "react-dom";
 import SenderForm from "../ui/senderForm";
 
 export default function Form() {
