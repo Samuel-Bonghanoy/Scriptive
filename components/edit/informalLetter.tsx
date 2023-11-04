@@ -17,9 +17,14 @@ function InformalLetter() {
               +{letterContent.senderContactNum}
             </p>
             <p className="text-[1rem] self-end">{letterContent.senderEmail}</p>
-            <p className="text-[1rem] self-end">
-              {letterContent.senderAddress}
-            </p>
+            <div className="text-[1rem] self-end">
+              {letterContent.content.split("\n").map((sec) => (
+                <p className="text-[1rem] pb-3" key={sec}>
+                  {sec}
+                  <br />
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 

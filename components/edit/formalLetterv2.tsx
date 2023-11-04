@@ -41,9 +41,21 @@ function FormalLetterv2() {
             <p>Dear {letterContent.recipientName},</p>
             <p className="text-[0.9rem]">{letterContent.date}</p>
           </div>
-          <p className="text-[1rem] pb-5">{letterContent.content}</p>
+          <div className="text-[1rem] pb-5">
+            {letterContent.content.split("\n").map((sec) => {
+              if (/\S/.test(sec))
+                return (
+                  <p className="text-[1rem] pb-3" key={sec}>
+                    {sec}
+                    <br />
+                  </p>
+                );
+            })}
+          </div>
           <p className="text-[1rem] pb-5">Sincerely,</p>
-          <p className="text-[1rem] pb-5">{letterContent.senderName}</p>
+          <p className="text-[1rem] pb-5 font-semibold">
+            {letterContent.senderName}
+          </p>
         </div>
         <div className="justify-self-end">
           <hr className="border-1 border-black my-3" />
