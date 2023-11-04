@@ -54,16 +54,16 @@ function FormalLetterv2() {
                 {letterContent.recipientName}
               </p>
               <p className="text-[1.1rem] font-semibold mb-2">
-                Hiring Manager, Scriptive HQ
+                {letterContent.recipientTitle}
               </p>
             </div>
             <div className="flex flex-col">
               <p className="text-[1.1rem] self-end">+123-456-7890</p>
               <p className="text-[1.1rem] self-end">
-                recipientname@scriptive.com
+                {letterContent.recipientEmail}
               </p>
               <p className="text-[1.1rem] self-end">
-                123 Anywhere St. Any City
+                {letterContent.recipientAddress}
               </p>
             </div>
           </div>
