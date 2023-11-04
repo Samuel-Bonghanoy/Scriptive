@@ -35,6 +35,7 @@ const defaultLetterContent: letter = {
   consectetur eligendi assumenda ut saepe ea?
   `,
   date: "14th August 2026",
+  topic: "Job Reference: Senior Developer",
 };
 
 type letter = {
@@ -50,6 +51,7 @@ type letter = {
   recipientEmail: string;
   content: string;
   date: string;
+  topic: string;
 };
 
 type LetterContextType = {

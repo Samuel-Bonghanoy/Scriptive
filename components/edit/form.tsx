@@ -4,9 +4,20 @@ import React from "react";
 import { useState } from "react";
 import Modal from "../ui/modal";
 import SenderForm from "../ui/senderForm";
+import { FieldValues, useForm } from "react-hook-form";
+import { LetterData } from "@/contexts/LetterContext";
 
 export default function Form() {
   const [type, setType] = useState("sender");
+
+  const { register, handleSubmit, reset } = useForm();
+  const { setLetterContent, letterContent } = LetterData();
+
+  function onSubmit(data: FieldValues) {
+    setLetterContent({ ...letterContent, ...data });
+    reset();
+    console.log(data);
+  }
 
   // const completion = await openai.chat.completions.create({
   //   model: "gpt-3.5-turbo",
@@ -43,6 +54,18 @@ export default function Form() {
           <label className="label">
             <span className="label-text text-black font-semibold">
               What date will this letter be sent out on?
+            </span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full bg-white text-black"
+          />
+        </div>
+        <div className="form-control w-full  ">
+          <label className="label">
+            <span className="label-text text-black font-semibold">
+              What is the topic of your letter?
             </span>
           </label>
           <input

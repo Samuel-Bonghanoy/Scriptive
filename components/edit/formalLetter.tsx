@@ -28,7 +28,7 @@ function FormalLetter() {
         <p className="text-[1.1rem] font-semibold">
           {letterContent.recipientName}
         </p>
-        <p className="text-[1.1rem] font-semibold mb-2">
+        <p className="text-[1.1rem] font-semibold mb-2 max-w[30ch]">
           {letterContent.recipientTitle}
         </p>
 
@@ -37,7 +37,7 @@ function FormalLetter() {
         <p className="text-[1.1rem] ">{letterContent.recipientAddress}</p>
 
         <p className="text-[1.35rem] uppercase py-5 font-semibold">
-          Job Reference: Senior Developer
+          {letterContent.topic}
         </p>
         <p className="text-[1rem] pb-5">Dear {letterContent.recipientName},</p>
         <p className="text-[1rem] pb-5">{letterContent.content}</p>
