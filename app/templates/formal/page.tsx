@@ -6,7 +6,7 @@ import Link from "next/link";
 import Form from "@/components/edit/form";
 import { LetterData } from "@/contexts/LetterContext";
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">

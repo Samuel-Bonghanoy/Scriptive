@@ -4,7 +4,7 @@ import Footer from "@/components/ui/footer";
 import Stats from "@/components/ui/stats";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <Navbar theme="white" />

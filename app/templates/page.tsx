@@ -5,7 +5,7 @@ import InformalLetter from "@/components/letters/informalLetter";
 import StyleIcon from "@mui/icons-material/Style";
 import Link from "next/link";
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <div className="bg-slate-50 pb-3 pl-[3%] text-sm text-black font-semibold breadcrumbs overflow-y-hidden ">
