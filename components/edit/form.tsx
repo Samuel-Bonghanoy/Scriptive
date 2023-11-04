@@ -6,8 +6,7 @@ import Modal from "../ui/modal";
 import SenderForm from "../ui/senderForm";
 import { FieldValues, useForm } from "react-hook-form";
 import { LetterData } from "@/contexts/LetterContext";
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
+import { createPDF } from "@/utils/createPDF";
 
 export default function Form() {
   const [type, setType] = useState("sender");
@@ -94,7 +93,7 @@ export default function Form() {
         </button>
       </form>
       <button
-        type="submit"
+        onClick={(e) => createPDF(letterContent.senderName, "letter")}
         className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
       >
         Download PDF

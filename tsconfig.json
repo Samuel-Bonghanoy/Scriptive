@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/letters/formalLetter.tsx",
-    "utils/generateLetterBody.js"
+    "utils/generateLetterBody.ts"
   ],
   "exclude": ["node_modules"]
 }
