@@ -61,9 +61,10 @@ export default function Form() {
           </label>
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Date"
             className="input input-bordered w-full bg-white text-black"
             {...register("date")}
+            defaultValue={letterContent?.date}
           />
         </div>
         <div className="form-control w-full  ">
@@ -74,9 +75,10 @@ export default function Form() {
           </label>
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Topic"
             className="input input-bordered w-full bg-white text-black"
             {...register("topic")}
+            defaultValue={letterContent?.topic}
           />
         </div>
 
@@ -87,9 +89,10 @@ export default function Form() {
             </span>
           </label>
           <textarea
-            className="textarea textarea-bordered bg-white text-black"
-            placeholder="Bio"
+            className="textarea textarea-bordered h-[15rem] bg-white text-black"
+            placeholder="Enter your letter body"
             {...register("content")}
+            defaultValue={letterContent?.content}
           ></textarea>
         </div>
         <div className="flex flex-col">
