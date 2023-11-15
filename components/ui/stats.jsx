@@ -6,7 +6,7 @@ function Stats() {
       <div className="stat flex flex-col gap-3 justify-center items-center ">
         <div className="flex flex-col gap-3 items-center">
           <div className="stat-title text-white text-lg font-bold">
-            Downloadable as PDF or PNG
+            Downloadable as PDF
           </div>
           <div className="stat-value text-main">
             <svg
