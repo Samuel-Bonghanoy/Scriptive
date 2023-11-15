@@ -12,7 +12,9 @@ function FormalLetterv2() {
         <div>
           <div className="flex justify-between">
             <div>
-              <h1 className="text-4xl font-bold">{letterContent.senderName}</h1>
+              <h1 className="text-4xl font-bold mb-[0.5px]">
+                {letterContent.senderName}
+              </h1>
               <p className="text-lg font-semibold">
                 {letterContent.senderTitle}
               </p>
