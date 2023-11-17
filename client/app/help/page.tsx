@@ -33,9 +33,11 @@ export default async function page() {
                   is a web application engineered to automate the creation of
                   personalized letters and documents.
                 </p>
-                <button className="mt-6 w-[55%] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[6px] hover:border-b-[6px]">
-                  Get Started
-                </button>
+                <Link href="/templates">
+                  <button className="mt-6 w-[55%] border-2 text-xl border-black px-2 py-3 rounded-md bg-pink text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[6px] hover:border-b-[6px]">
+                    Get Started
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
