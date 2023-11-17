@@ -9,7 +9,7 @@ export default function Navbar({ theme }: { theme: string }) {
       <div className="drawer-content flex flex-col shadow-gray-500 shadow-sm">
         {/* Navbar */}
         <div
-          className={`w-full h-[5rem] navbar ${
+          className={`w-full h-[12vh] navbar ${
             theme === "yellow" ? "bg-main" : "bg-mainwhite"
           }`}
         >
