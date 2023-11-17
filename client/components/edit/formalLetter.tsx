@@ -6,7 +6,7 @@ function FormalLetter() {
   const { letterContent } = LetterData();
 
   return (
-    <div className="flex h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 shadow-gray-700 shadow-md rounded-md letter">
+    <div className="flex min-h-[1056px] w-[816px] bg-white flex-col px-12 py-12 text-black gap-2 shadow-gray-700 shadow-md rounded-md letter">
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold">{letterContent.senderName}</h1>
         <div className="flex justify-between">

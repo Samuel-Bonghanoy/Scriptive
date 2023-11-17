@@ -97,7 +97,7 @@ export default function RecipientForm({ type }: { type: string }) {
             defaultValue={letterContent?.recipientEmail}
           />
         </div>
-        <div className="flex justify-end items-end gap-3">
+        <div className="flex justify-end items-end gap-3 modal-action">
           <button
             onClick={() =>
               toast.success("Successfully applied changes", {
@@ -114,7 +114,7 @@ export default function RecipientForm({ type }: { type: string }) {
             type="submit"
             className=" rounded-md w-fit font-semibold bg-subyellow text-black px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
           >
-            Apply Changes
+            <label htmlFor="my_modal_6">Apply Changes</label>
           </button>
           <div className="modal-action">
             <label

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function Stats() {
   return (
     <div className="stats shadow h-[60%] w-[70%] bg-base-300 text-white">
