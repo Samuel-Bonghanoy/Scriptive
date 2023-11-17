@@ -10,6 +10,7 @@ export default async function Home() {
       <Navbar theme="white" />
       <main className="flex transition-all duration-200 flex-col justify-center gap-10 lg:flex-row min-h max-w-screen pb-[4.5rem] pt-[2rem] px-[2rem] bg-subyellow shadow-main shadow-md">
         <Hero />
+
         <div className="h-[80%] w-[60%] flex justify-center bg-mainwhite border-[3px] hover:bg-pink text-xl border-black px-2 py-3 rounded-md text-black font-bold transition-all duration-[30] hover:scale-[1.01] hover:border-l-[7px] hover:border-b-[7px]">
           <Image
             src="/hero.svg"

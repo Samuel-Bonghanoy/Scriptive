@@ -1,4 +1,6 @@
+import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
+import Steps from "@/components/ui/steps";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +9,7 @@ export default async function page() {
   return (
     <>
       <Navbar theme="yellow" />
-      <div className="h-[120vh] w-screen bg-mainwhite text-black">
+      <div className="h-[130vh] max-w-screen bg-mainwhite text-black">
         <div className="h-full bg-mainwhite">
           <div className="hero-content max-w-[80vw] mx-auto">
             <div className="flex justify-between gap-24 mt-5">
@@ -37,8 +39,30 @@ export default async function page() {
               </div>
             </div>
           </div>
+          <div className="flex max-w-[80%] mx-auto">
+            <div className="flex flex-col items-start w-[100%]  justify-between pl-4 gap-5 mt-10">
+              <h1 className="text-5xl font-bold">How to use Scriptive</h1>
+              <ul className="list-decimal flex flex-col  ml-8 text-lg gap-2">
+                <li>Choose a template</li>
+                <li>Edit Sender Details</li>
+                <li>Edit Recipient Details</li>
+                <li>Edit Letter Body and Subject</li>
+                <li>Apply Changes</li>
+                <li>Download as PDF</li>
+              </ul>
+            </div>
+            <div className="mockup-browser border bg-base-300 text-white w-full mt-10">
+              <div className="mockup-browser-toolbar">
+                <div className="input">https://scriptive.com</div>
+              </div>
+              <div className="flex justify-center items-center h-full  bg-base-200">
+                <p className="mb-14">Should be simple.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
