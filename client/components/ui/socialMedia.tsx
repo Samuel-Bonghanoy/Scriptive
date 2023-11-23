@@ -20,7 +20,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
@@ -35,7 +35,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
@@ -50,7 +50,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
@@ -65,7 +65,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
@@ -80,7 +80,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
@@ -95,7 +95,7 @@ function SocialMedia() {
               width: "2.7rem",
               height: "2.7rem",
               fill: "#000000",
-              "&:hover": { fill: "#961418" },
+              "&:hover": { fill: "#FFC24A" },
             }}
           />
         </a>
