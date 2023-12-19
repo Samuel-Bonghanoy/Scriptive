@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Models
 {
-    public class SampleDBContext : DbContext
+    public class LetterContext : DbContext
     {
-        public SampleDBContext(DbContextOptions<SampleDBContext> options)
+        public LetterContext(DbContextOptions<LetterContext> options)
             : base(options)
         {
         }

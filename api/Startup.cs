@@ -19,7 +19,7 @@ namespace DotnetWebApiWithEFCodeFirst
         {
             services.AddControllers();
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<SampleDBContext>(options => options.UseSqlServer(connectionString));
+services.AddDbContext<LetterContext>(options => options.UseSqlServer(connectionString));
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

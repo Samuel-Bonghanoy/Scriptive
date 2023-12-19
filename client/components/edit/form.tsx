@@ -8,12 +8,13 @@ import { FieldValues, useForm } from "react-hook-form";
 import { LetterData } from "@/contexts/LetterContext";
 import { createPDF } from "@/utils/createPDF";
 import { ToastContainer, toast } from "react-toastify";
+import LettersModal from "../letters/lettersmodal";
 
 export default function Form() {
   const [type, setType] = useState("sender");
 
   const { register, handleSubmit, reset } = useForm();
-  const { setLetterContent, letterContent } = LetterData();
+  const { setLetterContent, letterContent, setLetters, letters } = LetterData();
 
   function onSubmit(data: FieldValues) {
     setLetterContent({ ...letterContent, ...data });
@@ -113,9 +114,26 @@ export default function Form() {
         >
           Download PDF
         </button>
-        <button className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]">
+        <button
+          onClick={() => {
+            setLetters([...letters, letterContent]);
+            toast.success("Successfully saved template", {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+            });
+          }}
+          className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+        >
           Save Template
         </button>
+
+        <LettersModal />
       </div>
     </>
   );

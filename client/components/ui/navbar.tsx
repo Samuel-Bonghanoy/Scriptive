@@ -1,9 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Modal from "../login/modal";
+import { UserData } from "@/contexts/UserContext";
+import UsersModal from "./usermodal";
 
 export default function Navbar({ theme }: { theme: string }) {
+  const { user } = UserData();
+
   return (
     <div className="drawer sticky top-0 z-30">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -76,6 +82,11 @@ export default function Navbar({ theme }: { theme: string }) {
               <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:cursor-pointer hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
                 <Modal></Modal>
               </li>
+              {user !== null && user.type === 10 && (
+                <li className="border-2 py-2 border-black rounded-md w-[5rem] transition-all duration-[30] hover:cursor-pointer hover:scale-[1.03] bg-subyellow hover:border-l-4 hover:border-b-4 text-center flex items-center justify-center">
+                  <UsersModal />
+                </li>
+              )}
             </ul>
           </div>
         </div>
