@@ -12,6 +12,8 @@ import {
 
 const defaultUserContent: user[] = [
   { name: "sethonne", password: "123", type: 10 },
+  { name: "sam", password: "123", type: 10 },
+  { name: "user2", password: "123", type: 1 },
   { name: "user", password: "123", type: 1 },
 ];
 
