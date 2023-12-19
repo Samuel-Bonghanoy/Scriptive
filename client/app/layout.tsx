@@ -3,6 +3,7 @@ import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import { LetterContextProvider } from "@/contexts/LetterContext";
+import { UserContextProvider } from "@/contexts/UserContext";
 
 export const rubik = Raleway({
   subsets: ["latin"],
@@ -32,7 +33,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${space.className} antialiased bg-slate-50`}>
-        <LetterContextProvider>{children}</LetterContextProvider>
+        <UserContextProvider>
+          <LetterContextProvider>{children}</LetterContextProvider>
+        </UserContextProvider>
       </body>
     </html>
   );
