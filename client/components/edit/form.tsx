@@ -106,12 +106,17 @@ export default function Form() {
           Apply Changes
         </button>
       </form>
-      <button
-        onClick={(e) => createPDF(letterContent.senderName, "letter")}
-        className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
-      >
-        Download PDF
-      </button>
+      <div className="flex flex-col">
+        <button
+          onClick={(e) => createPDF(letterContent.senderName, "letter")}
+          className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]"
+        >
+          Download PDF
+        </button>
+        <button className=" rounded-md w-fit font-semibold mt-4 bg-base-300 text-white px-10 pt-3 py-3 h-fit transition-all duration-200 hover:bg-yellow-600 hover:scale-[1.03]">
+          Save Template
+        </button>
+      </div>
     </>
   );
 }
