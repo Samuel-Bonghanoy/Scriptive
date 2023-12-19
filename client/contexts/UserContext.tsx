@@ -10,11 +10,10 @@ import {
   useState,
 } from "react";
 
-const defaultUserContent: user = {
-  name: "",
-  password: "",
-  type: 0,
-};
+const defaultUserContent: user[] = [
+  { name: "sethonne", password: "123", type: 10 },
+  { name: "user", password: "123", type: 1 },
+];
 
 type user = {
   name: string;
@@ -23,20 +22,25 @@ type user = {
 };
 
 type userContextType = {
-  userContent: user;
-  setUserContent: Dispatch<SetStateAction<user>>;
+  users: user[];
+  setUsers: Dispatch<SetStateAction<user[]>>;
+  user: user | null;
+  setUser: Dispatch<SetStateAction<user | null>>;
 };
 
 const UserContext = createContext<userContextType>({
-  userContent: defaultUserContent,
-  setUserContent: () => {},
+  users: defaultUserContent,
+  setUsers: () => {},
+  user: null,
+  setUser: () => {},
 });
 
 export const UserContextProvider = ({ children }: { children: ReactNode }) => {
-  const [userContent, setUserContent] = useState<user>(defaultUserContent);
+  const [users, setUsers] = useState<user[]>(defaultUserContent);
+  const [user, setUser] = useState<user | null>(null);
 
   return (
-    <UserContext.Provider value={{ userContent, setUserContent }}>
+    <UserContext.Provider value={{ user, users, setUsers, setUser }}>
       {children}
     </UserContext.Provider>
   );
