@@ -30,7 +30,7 @@ namespace api.Controllers
         };
 
         [HttpGet]
-        public IActionResult Get() {
+        public ActionResult<Letter> Get() {
             return Ok(letter);
         }
     }
