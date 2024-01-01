@@ -1,5 +1,5 @@
 # Kitsune
-A refactored version of my Nippon-Neon-Twitter-Clone repository using the MERN stack
+An automated letter generation application
 
 # Technology Stack
 
