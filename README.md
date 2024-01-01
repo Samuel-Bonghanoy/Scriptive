@@ -1,4 +1,4 @@
-# Kitsune
+# Scriptive
 An automated letter generation application
 
 # Technology Stack
